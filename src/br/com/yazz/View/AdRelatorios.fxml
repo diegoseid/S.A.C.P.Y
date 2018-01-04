@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="670.6" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.AdRelatoriosController">
+   <children>
+      <PieChart fx:id="PCProjetos" labelLineLength="2.0" labelsVisible="false" layoutX="375.0" layoutY="280.0" prefHeight="266.0" prefWidth="271.0" title="Projetos" />
+      <PieChart fx:id="PCChamados" labelLineLength="2.0" labelsVisible="false" layoutX="14.0" layoutY="280.0" prefHeight="266.0" prefWidth="271.0" title="Chamados" />
+      <Pane layoutX="109.0" layoutY="70.0" prefHeight="179.0" prefWidth="453.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+         <children>
+            <Pane layoutX="21.0" layoutY="74.0" prefHeight="99.0" prefWidth="411.0" style="-fx-background-color: #edf1f2; -fx-border-color: gray; -fx-border-radius: 5px; -fx-background-radius: 5px;">
+               <children>
+                  <Label layoutX="9.0" layoutY="9.0" prefHeight="26.0" prefWidth="73.0" text="Chamados" underline="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="57.0" prefHeight="26.0" prefWidth="83.0" text="Encerrados:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="206.0" layoutY="9.0" prefHeight="26.0" prefWidth="73.0" text="Projetos" underline="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ChAbertos" editable="false" focusTraversable="false" layoutX="92.0" layoutY="32.0" prefHeight="25.0" prefWidth="34.0" />
+                  <TextField fx:id="ChEncerrados" editable="false" focusTraversable="false" layoutX="92.0" layoutY="58.0" prefHeight="25.0" prefWidth="34.0" />
+                  <TextField fx:id="PrEncerrados" editable="false" focusTraversable="false" layoutX="289.0" layoutY="59.0" prefHeight="25.0" prefWidth="34.0" />
+                  <TextField fx:id="PrAbertos" editable="false" focusTraversable="false" layoutX="289.0" layoutY="33.0" prefHeight="25.0" prefWidth="34.0" />
+                  <Label layoutX="206.0" layoutY="32.0" prefHeight="26.0" prefWidth="60.0" text="Abertos:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="206.0" layoutY="59.0" prefHeight="26.0" prefWidth="83.0" text="Encerrados:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="33.0" prefHeight="26.0" prefWidth="60.0" text="Abertos:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <DatePicker fx:id="dpInico" layoutX="62.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" />
+            <DatePicker fx:id="dpFim" layoutX="237.0" layoutY="37.0" prefHeight="25.0" prefWidth="116.0" />
+            <Label layoutX="149.0" layoutY="1.0" prefHeight="26.0" prefWidth="177.0" text="Filtrar dados por data" underline="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="butBuscar" layoutX="374.0" layoutY="38.0" onAction="#Pesquisar" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2b579a; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Pesquisar" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="37.0" prefHeight="26.0" prefWidth="45.0" text="Inicio:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="37.0" prefHeight="26.0" prefWidth="34.0" text="Fim:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="285.0" layoutY="14.0" prefHeight="49.0" prefWidth="101.0" text="Relatorios" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane_Base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="670.6" style="-fx-background-color: #edf1f2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.Dash_PerfilController">
+   <children>
+      <JFXButton fx:id="butDelete" defaultButton="true" layoutX="535.0" layoutY="510.0" style="-fx-background-color: #2b579a; -fx-background-radius: 100px;" text="Deletar Conta" textFill="WHITE" />
+      <JFXButton fx:id="butCancelar" cancelButton="true" layoutX="39.0" layoutY="510.0" style="-fx-background-color: #2b579a; -fx-background-radius: 100px;" text="CANCELAR" textFill="WHITE" />
+      <Label layoutX="224.0" layoutY="25.0" prefHeight="50.0" prefWidth="279.0" text="Dados do Usuario">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="17.0" layoutY="84.0" prefHeight="178.0" prefWidth="637.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+         <children>
+            <ImageView layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@../Images/icons8_Businessman_100px_1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="143.0" layoutY="32.0" text="NOME" />
+            <TextField fx:id="txtNome" editable="false" focusTraversable="false" layoutX="205.0" layoutY="28.0" prefHeight="25.0" prefWidth="193.0" />
+            <Label layoutX="143.0" layoutY="75.0" text="E-MAIL" />
+            <TextField fx:id="txtEmail" editable="false" focusTraversable="false" layoutX="205.0" layoutY="71.0" prefHeight="25.0" prefWidth="193.0" />
+            <TextField fx:id="txtUser" editable="false" focusTraversable="false" layoutX="500.0" layoutY="29.0" prefHeight="25.0" prefWidth="123.0" />
+            <Label layoutX="428.0" layoutY="32.0" text="USUARIO" />
+            <Label layoutX="426.0" layoutY="122.0" text="TELEFONE" />
+            <TextField fx:id="txtTelefone" editable="false" focusTraversable="false" layoutX="500.0" layoutY="118.0" prefHeight="25.0" prefWidth="123.0" />
+            <Label layoutX="429.0" layoutY="75.0" text="SENHA" />
+            <PasswordField fx:id="txtSenha" editable="false" focusTraversable="false" layoutX="500.0" layoutY="74.0" prefHeight="25.0" prefWidth="123.0" />
+            <TextField fx:id="txtCPF_CNPJ" editable="false" focusTraversable="false" layoutX="205.0" layoutY="118.0" prefHeight="25.0" prefWidth="123.0" />
+            <Label layoutX="143.0" layoutY="122.0" text="CPF" />
+         </children>
+      </Pane>
+      <Label layoutX="224.0" layoutY="280.0" prefHeight="50.0" prefWidth="294.0" text="Dados da Empresa">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="17.0" layoutY="339.0" prefHeight="145.0" prefWidth="637.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <children>
+            <TextField fx:id="txtEndereco" editable="false" focusTraversable="false" layoutX="404.0" layoutY="36.0" />
+            <Label layoutX="322.0" layoutY="40.0" text="ENDEREÇO" />
+            <TextField fx:id="txtRazao" editable="false" focusTraversable="false" layoutX="121.0" layoutY="36.0" />
+            <Label layoutX="25.0" layoutY="40.0" text="RAZÃO SOCIAL" />
+            <Label layoutX="322.0" layoutY="98.0" text="PORTE" />
+            <Label layoutX="31.0" layoutY="98.0" text="RAMO" />
+            <TextField fx:id="txtRamo" editable="false" focusTraversable="false" layoutX="121.0" layoutY="94.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField fx:id="txtPorte" editable="false" focusTraversable="false" layoutX="404.0" layoutY="94.0" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="butAlterSenha" defaultButton="true" layoutX="414.0" layoutY="510.0" onAction="#Alterar" style="-fx-background-color: #2b579a; -fx-background-radius: 100px;" text="Alterar Senha" textFill="WHITE" />
+      <JFXButton fx:id="butSalvar" defaultButton="true" layoutX="522.0" layoutY="268.0" onAction="#Salvar" style="-fx-background-color: #2b579a; -fx-background-radius: 100px;" text="Salvar Nova Senha" textFill="WHITE" />
+   </children>
+</AnchorPane>

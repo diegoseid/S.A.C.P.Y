@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane_Base" prefHeight="560.0" prefWidth="670.6" style="-fx-background-color: #edf1f2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.AdProjetosController">
+   <children>
+      <Label layoutX="184.0" layoutY="29.0" prefHeight="49.0" prefWidth="277.0" text="Lista de Projetos Solicitados" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtParametro" layoutX="290.0" layoutY="122.0" prefHeight="25.0" prefWidth="118.0" promptText="Pesquise Aqui" />
+      <JFXButton fx:id="butBuscar" defaultButton="true" layoutX="421.0" layoutY="122.0" onAction="#Pesquisar" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #2b579a; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Buscar" textFill="WHITE" />
+      <JFXButton fx:id="butDetalhes" layoutX="561.0" layoutY="122.0" onAction="#Detalhes" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #48d42d; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Detalhes" textFill="WHITE" />
+      <ScrollPane layoutX="3.0" layoutY="165.0" pannable="true" prefHeight="395.0" prefWidth="662.0">
+         <content>
+            <TableView fx:id="Tabela" editable="true" prefHeight="397.0" prefWidth="933.0">
+               <columns>
+                  <TableColumn fx:id="colunaID" prefWidth="46.0" text="ID" />
+                  <TableColumn fx:id="colunaTitulo" prefWidth="99.0" text="Titulo" />
+                  <TableColumn fx:id="colunaDescricao" prefWidth="97.0" text="Descrição" />
+                  <TableColumn fx:id="colunaqtdeAcessos" prefWidth="78.0" text="QTDE AC" />
+                  <TableColumn fx:id="colunaPrioridade" prefWidth="106.0" text="Prioridade" />
+                  <TableColumn fx:id="colunaStatus" prefWidth="88.0" text="Status" />
+                  <TableColumn fx:id="colunaAbertura" prefWidth="68.0" text="Abertura" />
+                  <TableColumn fx:id="colunaEncerramento" prefWidth="90.0" text="Encerramento" />
+                  <TableColumn fx:id="colunaCusto" prefWidth="70.0" text="Custo" />
+                  <TableColumn fx:id="colunaLinguagens" prefWidth="88.0" text="Linguagens" />
+                  <TableColumn fx:id="colunaFK_ID" prefWidth="103.0" text="ID_Usuario" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ChoiceBox fx:id="cbEscolha" layoutX="118.0" layoutY="122.0" prefHeight="25.0" prefWidth="131.0" />
+      <Label layoutX="35.0" layoutY="126.0" text="Pesquisar por:" />
+      <JFXButton fx:id="butAtualizar" layoutX="489.0" layoutY="122.0" onAction="#Atualizar" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #31bfe8; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Atualizar" textFill="WHITE" />
+      <ImageView layoutX="23.0" layoutY="4.0">
+         <image>
+            <Image url="@../Images/icons8_Group_of_Projects_100px_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

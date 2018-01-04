@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="670.6" style="-fx-background-color: #edf1f2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.AdClientesController">
+   <children>
+      <JFXButton fx:id="butBuscar" defaultButton="true" layoutX="192.0" layoutY="108.0" onAction="#Pesquisar" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #2b579a; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Buscar" textFill="WHITE" />
+      <JFXButton fx:id="butAtualizar" layoutX="386.0" layoutY="108.0" onAction="#Atualizar" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #31bfe8; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Atualizar" textFill="WHITE" />
+      <JFXButton fx:id="butRemover" layoutX="463.0" layoutY="108.0" onAction="#Remover" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #ec243c; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Remover" textFill="WHITE" />
+      <JFXButton fx:id="butEditar" layoutX="553.0" layoutY="108.0" onAction="#Alterar" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #48d42d; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Editar" textFill="WHITE" />
+      <TextField fx:id="txtParametro" layoutX="14.0" layoutY="108.0" promptText="Nome De Usuario" />
+      <ScrollPane layoutX="3.0" layoutY="164.0" pannable="true" prefHeight="395.0" prefWidth="662.0">
+         <content>
+            <TableView fx:id="Tabela" editable="true" prefHeight="397.0" prefWidth="981.0">
+               <columns>
+                  <TableColumn fx:id="colunaID" prefWidth="46.0" text="ID" />
+                  <TableColumn fx:id="colunaNome" prefWidth="99.0" text="Nome" />
+                  <TableColumn fx:id="colunaEmail" prefWidth="97.0" text="E-mail" />
+                  <TableColumn fx:id="colunaCPF" prefWidth="96.0" text="Cpf" />
+                  <TableColumn fx:id="colunaEndereco" prefWidth="88.0" text="Endereço" />
+                  <TableColumn fx:id="colunaRazaoSocial" prefWidth="88.0" text="Razao Social" />
+                  <TableColumn fx:id="colunaUsuario" prefWidth="68.0" text="Usuario" />
+                  <TableColumn fx:id="colunaSenha" prefWidth="72.0" text="Senha" />
+                  <TableColumn fx:id="colunaPorte" prefWidth="88.0" text="Porte" />
+                  <TableColumn fx:id="colunaRamo" prefWidth="88.0" text="Ramo" />
+                  <TableColumn fx:id="colunaTelefone" prefWidth="69.0" text="Telefone" />
+                  <TableColumn fx:id="colunaCnpj" prefWidth="91.0" text="Cnpj" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ImageView layoutX="39.0">
+         <image>
+            <Image url="@../Images/icons8_Video_Chat_100px_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="271.0" layoutY="14.0" prefHeight="50.0" prefWidth="247.0" text="Lista de clientes">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.6" prefWidth="842.8" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.AdministratorController">
+   <children>
+      <Pane prefHeight="560.0" prefWidth="172.2" style="-fx-background-color: #2b579a;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="S.A.C.P.Y" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="42.0" text="Versão 2.0.1" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label ellipsisString="" layoutX="4.0" layoutY="417.0" prefHeight="21.0" prefWidth="165.0" text="                                                   " textFill="#fcfcfc" underline="true">
+               <font>
+                  <Font size="16.8" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="525.0" text="Yazz Technology" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="butProjetos" focusTraversable="false" layoutY="76.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="     Projetos" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="butEncerrar" focusTraversable="false" layoutY="451.0" prefHeight="59.0" prefWidth="172.0" style="-fx-background-color: #2b579a;" text="     Encerrar" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="butChamados" focusTraversable="false" layoutY="146.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="        Chamados" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="butRelatorios" focusTraversable="false" layoutY="216.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="        Relatorios" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="butClientes" focusTraversable="false" layoutY="286.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="     Clientes" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView layoutX="19.0" layoutY="166.0">
+               <image>
+                  <Image url="@../Images/icons8_View_More_30px.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="19.0" layoutY="96.0">
+               <image>
+                  <Image url="@../Images/icons8_Linux_Server_30px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="19.0" layoutY="466.0">
+               <image>
+                  <Image url="@../Images/icons8_Logout_Rounded_Up_30px.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="19.0" layoutY="234.0">
+               <image>
+                  <Image url="@../Images/icons8_Report_Card_35px.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="17.0" layoutY="304.0">
+               <image>
+                  <Image url="@../Images/icons8_Contact_Details_35px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Base" layoutX="173.0" prefHeight="560.0" prefWidth="670.6" style="-fx-border-style: solid; -fx-background-color: #edf1f2;">
+         <children>
+            <Label layoutX="141.0" layoutY="63.0" prefHeight="49.0" prefWidth="391.0" text="YAZZ SYSTEM  - Administrator pane">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Pane layoutX="18.0" layoutY="280.0" prefHeight="242.0" prefWidth="315.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+               <children>
+                  <Label layoutX="99.0" layoutY="14.0" prefHeight="49.0" prefWidth="87.0" text="Tarefas" underline="true">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="24.0" layoutY="67.0" prefHeight="169.0" prefWidth="281.0" text="- Verificar os Chamados Abertos&#10;- Verificar os Chamados em Analise&#10;- Verificar os Projetos Abertos&#10;- Verificar os Projetos em Analise&#10;- Documentar Todo o Projeto">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="137.0" prefHeight="97.0" prefWidth="592.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+               <children>
+                  <Label fx:id="lblHora" layoutX="392.0" layoutY="40.0" text="HH:MM:SS">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="334.0" layoutY="10.0" prefHeight="77.0" prefWidth="58.0" text="Hora: ">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="113.0" layoutY="11.0" prefHeight="77.0" prefWidth="51.0" text="Data:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblData" layoutX="188.0" layoutY="40.0" text="DD/MM/AAAA">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="340.0" layoutY="280.0" prefHeight="242.0" prefWidth="315.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="49.0" prefWidth="274.0" text="Administradores | ID     " underline="true">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label ellipsisString="" layoutX="13.0" layoutY="63.0" prefHeight="137.0" prefWidth="289.0" text="Deilson Araujo             04188            &#10;Eder Rochar                 20288&#10;Jose Diego                   19981&#10;Marcos Viniçius            04513&#10;Vitoria Rosendo           20245&#10;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <JFXButton fx:id="butMinimizar" focusTraversable="false" layoutX="750.0" layoutY="5.0" prefHeight="29.0" prefWidth="40.0" style="-fx-background-color: #2b579a;" text="_" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butFechar" focusTraversable="false" layoutX="800.0" layoutY="5.0" prefHeight="29.0" prefWidth="40.0" style="-fx-background-color: #2b579a;" text="X" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

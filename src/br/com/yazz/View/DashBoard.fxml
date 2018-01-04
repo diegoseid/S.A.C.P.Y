@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.6" prefWidth="842.8" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.DashBoardController">
+   <children>
+      <Pane fx:id="pane" prefHeight="560.0" prefWidth="172.2" style="-fx-background-color: #2b579a;">
+         <children>
+            <Label ellipsisString="" layoutX="4.0" layoutY="417.0" prefHeight="21.0" prefWidth="165.0" text="                                                   " textFill="#fcfcfc" underline="true">
+               <font>
+                  <Font size="16.8" />
+               </font></Label>
+            <Label layoutX="34.0" layoutY="525.0" text="Yazz Technology" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <JFXButton fx:id="butPerfil" focusTraversable="false" layoutY="76.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="Perfil" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="butEncerrar" focusTraversable="false" layoutY="451.0" prefHeight="59.0" prefWidth="172.0" style="-fx-background-color: #2b579a;" text="     Encerrar" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="butEstatus" focusTraversable="false" layoutY="146.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="  Status" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="butProjetos" focusTraversable="false" layoutY="216.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="     Projetos" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="butChamados" focusTraversable="false" layoutY="286.0" prefHeight="70.0" prefWidth="172.2" style="-fx-background-color: #2b579a;" text="        Chamados" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="16.0" />
+               </font></JFXButton>
+            <ImageView layoutX="19.0" layoutY="166.0">
+               <image>
+                  <Image url="@../Images/icons8_View_More_30px.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="19.0" layoutY="96.0">
+               <image>
+                  <Image url="@../Images/icons8_User_30px.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="19.0" layoutY="466.0">
+               <image>
+                  <Image url="@../Images/icons8_Logout_Rounded_Up_30px.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="19.0" layoutY="236.0">
+               <image>
+                  <Image url="@../Images/icons8_Linux_Server_30px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="19.0" layoutY="306.0">
+               <image>
+                  <Image url="@../Images/icons8_Ticket_30px.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pane_Base" layoutX="173.0" prefHeight="560.0" prefWidth="670.6" style="-fx-border-style: solid; -fx-background-color: #edf1f2;">
+         <children>
+            <Label fx:id="lblHora" layoutX="405.0" layoutY="197.0" text="hora">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="241.0" layoutY="95.0" prefHeight="49.0" prefWidth="158.0" text="YAZZ SYSTEM">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="336.0" layoutY="172.0" prefHeight="77.0" prefWidth="69.0" text="Hora: ">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="172.0" prefHeight="77.0" prefWidth="69.0" text="Data:">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="336.0" layoutY="299.0" prefHeight="63.0" prefWidth="124.0" text="STATUS:">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="449.0" prefHeight="49.0" prefWidth="95.0" text="CUSTO:">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="336.0" layoutY="444.0" prefHeight="58.0" prefWidth="234.0" text="DATA SOLICITAÇAO:">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="302.0" prefHeight="59.0" prefWidth="115.0" text="PROJETO:">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblData" layoutX="138.0" layoutY="199.0" text="data">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProjeto" layoutX="184.0" layoutY="302.0" prefHeight="59.0" prefWidth="40.0" text="null">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEstatus" layoutX="442.0" layoutY="302.0" prefHeight="59.0" prefWidth="40.0" text="null">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCusto" layoutX="184.0" layoutY="450.0" prefHeight="49.0" prefWidth="95.0" text="R$: 0,00">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDtSolicitacao" layoutX="560.0" layoutY="449.0" prefHeight="49.0" prefWidth="104.0" text="data">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <JFXButton fx:id="butFechar" focusTraversable="false" layoutX="790.0" layoutY="5.0" prefHeight="29.0" prefWidth="40.0" style="-fx-background-color: #2b579a;" text="X" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butMinimizar" focusTraversable="false" layoutX="740.0" layoutY="5.0" prefHeight="29.0" prefWidth="40.0" style="-fx-background-color: #2b579a;" text="_" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="38.0" layoutY="52.0" text="Versão 2.0.1" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="24.0" text="S.A.C.P.Y" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

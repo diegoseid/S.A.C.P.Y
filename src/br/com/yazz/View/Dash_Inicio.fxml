@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.Dash_InicioController">
+   <children>
+      <Pane fx:id="pane_Base" prefHeight="560.0" prefWidth="670.6" style="-fx-border-style: solid; -fx-background-color: #edf1f2;">
+         <children>
+            <Label layoutX="257.0" layoutY="42.0" prefHeight="49.0" prefWidth="158.0" text="YAZZ SYSTEM">
+               <font>
+                  <Font name="System" size="21.0" />
+               </font>
+            </Label>
+            <Pane layoutX="40.0" layoutY="250.0" prefHeight="242.0" prefWidth="592.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+               <children>
+                  <Label layoutX="276.0" layoutY="86.0" prefHeight="63.0" prefWidth="76.0" text="Status:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="88.0" prefHeight="59.0" prefWidth="76.0" text="Projeto:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font> 
+                  </Label>
+                  <Label fx:id="lblProjeto" layoutX="116.0" layoutY="88.0" prefHeight="59.0" prefWidth="152.0">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEstatus" layoutX="362.0" layoutY="88.0" prefHeight="59.0" prefWidth="87.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="182.0" prefHeight="49.0" prefWidth="102.0" text="Custo: R$">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="177.0" prefHeight="58.0" prefWidth="171.0" text="Data Solicitação:">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCusto" layoutX="135.0" layoutY="182.0" prefHeight="49.0" prefWidth="65.0">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDtSolicitacao" ellipsisString="" layoutX="430.0" layoutY="182.0" prefHeight="49.0" prefWidth="152.0">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="175.0" layoutY="14.0" prefHeight="49.0" prefWidth="242.0" text="Dados Do Ultimo Projeto" underline="true">
+                     <font>
+                        <Font name="System" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="135.0" prefHeight="97.0" prefWidth="592.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+               <children>
+                  <Label fx:id="lblHora" layoutX="392.0" layoutY="40.0" text="HH:MM:SS">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="334.0" layoutY="10.0" prefHeight="77.0" prefWidth="58.0" text="Hora: ">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="113.0" layoutY="11.0" prefHeight="77.0" prefWidth="51.0" text="Data:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblData" layoutX="188.0" layoutY="40.0" text="DD/MM/AAAA">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

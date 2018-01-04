@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.LoginPController">
+         <children>
+      <ImageView fitHeight="401.0" fitWidth="716.0" layoutX="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/blue-tech-circuit-board-technology-animated-background-video-graphic-design-hd-1920x1080_ewva7rwie__F0000.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="23.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="293.0" layoutY="52.0">
+         <image>
+            <Image url="@../Images/icons8_Male_User_100px_1.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="268.0" layoutY="189.0" prefHeight="25.0" prefWidth="20.0" style="-fx-background-color: dddde7;">
+         <children>
+            <ImageView layoutY="3.0">
+               <image>
+                  <Image url="@../Images/icons8_User_Male_20px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+            <TextField fx:id="lblUsername" layoutX="288.0" layoutY="189.0" promptText="Usuario" style="-fx-background-color: dddde7; -fx-prompt-text-fill: gray; -fx-background-radius: 0px;" />
+      <Pane layoutX="268.0" layoutY="248.0" prefHeight="25.0" prefWidth="20.0" style="-fx-background-color: dddde7;">
+         <children>
+            <ImageView layoutY="3.0">
+               <image>
+                  <Image url="@../Images/icons8_Access_20px_2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <PasswordField fx:id="lblPassword" layoutX="288.0" layoutY="248.0" promptText="Senha" style="-fx-background-color: dddde7; -fx-prompt-text-fill: gray; -fx-background-radius: 0px;" />
+      <JFXButton fx:id="butLogin" defaultButton="true" layoutX="266.0" layoutY="323.0" style="-fx-background-radius: 100px; -fx-background-color: #2a1fcc;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butRegister" layoutX="369.0" layoutY="323.0" style="-fx-background-radius: 100px; -fx-background-color: #2a1fcc;" text="Register" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="475.0" layoutY="89.0" text="Login Administrador" textFill="#f80000" underline="true" />
+      <Label layoutX="475.0" layoutY="107.0" text="Usuario:" textFill="#f80000" />
+      <Label layoutX="475.0" layoutY="124.0" text="Senha:" textFill="#f80000" />
+      <Label layoutX="526.0" layoutY="107.0" text="admin" textFill="#27f89e" />
+      <Label layoutX="526.0" layoutY="124.0" text="admin" textFill="#27f89e" />
+      <Label layoutX="476.0" layoutY="150.0" text="Login Usuario" textFill="#f80000" underline="true" />
+      <Label layoutX="473.0" layoutY="177.0" text="Clique em Register e Realize seu Cadastro," textFill="#27f89e" />
+      <Label layoutX="473.0" layoutY="194.0" text="Após isso Use suas informações de Login" textFill="#27f89e" />
+      <JFXButton fx:id="butMinimizar" focusTraversable="false" layoutX="636.0" layoutY="9.0" prefHeight="7.0" prefWidth="20.0" style="-fx-background-color: #2b579a;" text="_" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butFechar" focusTraversable="false" layoutX="676.0" layoutY="9.0" prefHeight="8.0" prefWidth="8.0" style="-fx-background-color: #2b579a;" text="X" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </JFXButton>
+         </children>
+      </AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="700.0" style="-fx-border-style: solid; -fx-background-color: #edf1f2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.yazz.Controllers.CadastroController">
+   <children>
+      <JFXButton fx:id="butMinimizar" layoutX="632.0" layoutY="6.0" style="-fx-background-color: #2b579a;" text="_" textFill="WHITE" />
+      <JFXButton fx:id="butFechar" layoutX="659.0" layoutY="6.0" style="-fx-background-color: #2b579a;" text="X" textFill="WHITE" />
+      <Label fx:id="lblAviso" layoutX="229.0" layoutY="18.0" prefHeight="17.0" prefWidth="254.0" text="Por Favor preencha os Campos em vermelho" textFill="RED" visible="false" />
+      <Label layoutX="266.0" layoutY="35.0" prefHeight="50.0" prefWidth="180.0" text="Dados Pessoais">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="20.0" layoutY="85.0" prefHeight="138.0" prefWidth="658.0" style="-fx-background-color: white; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <children>
+            <Label layoutX="137.0" layoutY="36.0" text="NOME" />
+            <TextField fx:id="txtNome" layoutX="225.0" layoutY="32.0" />
+            <ChoiceBox fx:id="cbSelect" layoutX="395.0" layoutY="32.0" prefHeight="25.0" prefWidth="75.0" />
+            <TextField fx:id="txtCPF_CNPJ" layoutX="475.0" layoutY="32.0" onKeyReleased="#FormatarCPF_CNPJ" />
+            <Label layoutX="135.0" layoutY="82.0" text="E-MAIL" />
+            <TextField fx:id="txtEmail" layoutX="225.0" layoutY="82.0" />
+            <Label layoutX="405.0" layoutY="84.0" text="TELEFONE" />
+            <TextField fx:id="txtTelefone" layoutX="475.0" layoutY="82.0" onKeyReleased="#FormatarCelular" prefHeight="25.0" prefWidth="115.0" promptText="(DDD) + NUMERO" />
+            <ImageView layoutX="14.0" layoutY="19.0">
+               <image>
+                  <Image url="@../Images/icons8_Businessman_100px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="256.0" layoutY="223.0" prefHeight="50.0" prefWidth="217.0" text="Dados da Empresa">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="20.0" layoutY="273.0" prefHeight="144.0" prefWidth="658.0" style="-fx-background-color: white; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <children>
+            <Label layoutX="143.0" layoutY="35.0" text="ENDEREÇO" />
+            <TextField fx:id="txtEndereco" layoutX="233.0" layoutY="35.0" />
+            <Label layoutX="413.0" layoutY="37.0" text="RAMO" />
+            <TextField fx:id="txtRamo" layoutX="483.0" layoutY="35.0" />
+            <Label layoutX="143.0" layoutY="85.0" text="RAZÃO SOCIAL" />
+            <TextField fx:id="txtRazaoSocial" layoutX="233.0" layoutY="85.0" />
+            <Label layoutX="413.0" layoutY="87.0" text="PORTE" />
+            <ChoiceBox fx:id="cbPorte" layoutX="483.0" layoutY="85.0" prefHeight="25.0" prefWidth="115.0" />
+            <ImageView layoutX="14.0" layoutY="22.0">
+               <image>
+                  <Image url="@../Images/icons8_Organization_100px_2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="256.0" layoutY="417.0" prefHeight="50.0" prefWidth="180.0" text="Dados de Login">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="49.0" layoutY="467.0" prefHeight="104.0" prefWidth="595.0" style="-fx-background-color: white; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <children>
+            <Label layoutX="63.0" layoutY="43.0" text="USUARIO" />
+            <TextField fx:id="txtUser" layoutX="132.0" layoutY="41.0" prefHeight="25.0" prefWidth="123.0" />
+            <Label layoutX="373.0" layoutY="43.0" text="SENHA" />
+            <PasswordField fx:id="txtSenha" layoutX="424.0" layoutY="41.0" />
+            <ImageView layoutX="22.0" layoutY="38.0">
+               <image>
+                  <Image url="@../Images/icons8_Workspace_30px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="333.0" layoutY="37.0">
+               <image>
+                  <Image url="@../Images/icons8_Access_30px_1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUsernameError" layoutX="132.0" layoutY="14.0" text="Username já esta em uso" textFill="RED" visible="false" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="butCadastrar" defaultButton="true" layoutX="585.0" layoutY="602.0" style="-fx-background-color: #2b579a; -fx-background-radius: 100px;" text="CADASTRAR" textFill="WHITE" />
+      <JFXButton fx:id="butCancelar" cancelButton="true" layoutX="31.0" layoutY="602.0" style="-fx-background-color: #2b579a; -fx-background-radius: 100px;" text="CANCELAR" textFill="WHITE" />
+   </children>
+</AnchorPane>
